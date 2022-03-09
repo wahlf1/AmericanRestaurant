@@ -24,7 +24,8 @@
 <body>
 
   <div class="header">
-    
+  <?php include 'includes/header.php';
+    ?>
   </div>
 
   <div class="hero-image">
@@ -72,7 +73,8 @@
 
 
    <div class="footer">
-    
+    <?php include 'includes/footer.php';
+    ?>
   </div>
 
   <!-- JS -->

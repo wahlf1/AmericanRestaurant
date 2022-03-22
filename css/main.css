@@ -19,7 +19,7 @@ nav{
 }
 
 .hero-image{
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),url("../assets/images/hero.jpg"));
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../assets/images/hero.jpg");
     height: 55%;
     background-position: center;
     background-repeat: no-repeat;
@@ -35,4 +35,28 @@ nav{
     transform: translate(-50%);
     color:#fff;
     padding: 10px;
+}
+
+.hero-text button{
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: black;
+    background-color: #F8F9FA;
+    text-align: center;
+    cursor: pointer;
+}
+
+.hero-text button:hover{
+    background-color: #343A40;
+    color: white;
+}
+/* Footer */
+footer{
+    width: 100%;
+    text-align: center;
+    padding: 20px 20px;
+    color: white;
+    height: 100%;
 }

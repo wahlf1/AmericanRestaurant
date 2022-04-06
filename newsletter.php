@@ -28,12 +28,26 @@
    
 
 	<div class="container">
+		
   	<?php
     	if (isset($_GET['msg']) && $_GET['msg'] == 'thankyou') {
-      	if (isset($_GET['last_id']) && !empty($_GET['last_id'])) {
+      	if (isset($_GET['last_entry']) && !empty($_GET['last_entry'])) {
 
         	include 'includes/dbconnect.php';
+			$entry_id = $_GET['last_entry'];
+			$query = "SELECT *
+					  FROM entries
+					  WHERE id = '$entry_id'";
 
+			$result = mysqli_query($conn,$query);
+			while($row = mysqli_fetch_assoc($result)){
+				$fname = $row['fName'];
+				$email = $row['email'];
+			}
+
+			echo "<p>Thank you for your subscription, $fname!</p>";
+			echo "<p>You will be receiving emails to: $email</p>";
+			echo "<p><a href = 'newsletter.php'>Enter another subscription!</a></p>";
       	}
     	} else {
 
@@ -47,8 +61,21 @@
     	<form name="NewsletterForm" action="process_newsletter.php" method="POST">
             <div class="form-group">
                 <label for="Name">First Name</label>
-                <input type="text" class="form-control" name="fname" placeholder="Enter your name"></input>
+                <input type="text" class="form-control" name="fname" placeholder="Enter your first name"></input>
             </div>
+			<div class="form-group">
+                <label for="Last">Last Name</label>
+                <input type="text" class="form-control" name="lname" placeholder="Enter your last name"></input>
+            </div>
+			<div class="form-group">
+                <label for="Email">Email Address</label>
+                <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" class="form-control" name="email" placeholder="Enter your email" aria-describedby="emailHelp"></input>
+            </div>
+			<div class="form-group">
+        	<input type="hidden" name="session_id" value="<?php echo $_COOKIE['PHPSESSID']; ?>">
+        	<button type="reset" value="Clear Form" class="btn btn-primary">Clear Form</button>
+        	<button type="submit" value="Submit" name="Submit" class="btn btn-primary">Submit</button>
+      	</div>
         </form>
 
   	<?php    

@@ -52,11 +52,21 @@ nav{
     background-color: #343A40;
     color: white;
 }
+
+.container{
+    margin-top: 10%;
+}
+
+.form-group{
+    padding: 5px;
+}
 /* Footer */
+
 footer{
     width: 100%;
     text-align: center;
     padding: 20px 20px;
     color: white;
     height: 100%;
+    max-height: 10%;
 }

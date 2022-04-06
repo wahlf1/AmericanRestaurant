@@ -5,7 +5,7 @@
     }
 ?>
 
-<footer class="navbar-dark bg-dark">
+<footer class="navbar-dark bg-dark fixed-bottom">
     <p>Created by: Walter Ahlf</p>
     <p>CS 485 | Copyright &copy; <?php get_current_year(); ?></p>
 </footer>

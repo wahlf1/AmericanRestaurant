@@ -32,7 +32,7 @@
       <div class="hero-text">
           <h1>The American Restaurant</h1>
           <p>Official Site</p>
-        
+          <button onclick="makeReservation()">Make a Reservation</button>
       </div>
   </div>
 
@@ -62,11 +62,22 @@
       
       <div class="row">
         <div class="col">
-          Left text
-        </div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut faucibus pulvinar elementum integer. A pellentesque sit amet porttitor. Mattis nunc sed blandit libero volutpat. Ut tellus elementum sagittis vitae. 
+        Imperdiet massa tincidunt nunc pulvinar. Amet facilisis magna etiam tempor orci eu. Ut aliquam purus sit amet luctus. 
+        Dolor purus non enim praesent elementum facilisis. Suspendisse potenti nullam ac tortor vitae purus faucibus ornare. 
+        Dui vivamus arcu felis bibendum ut tristique et egestas. Sapien eget mi proin sed libero enim sed faucibus turpis. 
+        Urna condimentum mattis pellentesque id. Odio tempor orci dapibus ultrices in iaculis nunc sed. 
+        Urna condimentum mattis pellentesque id nibh tortor id aliquet. Lobortis mattis aliquam faucibus purus in massa tempor nec. </div>
         <div class="col">
-          Right text
-        </div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut faucibus pulvinar elementum integer. A pellentesque sit amet porttitor. Mattis nunc sed blandit libero volutpat. 
+        Ut tellus elementum sagittis vitae. Imperdiet massa tincidunt nunc pulvinar. Amet facilisis magna etiam tempor orci eu. 
+        Ut aliquam purus sit amet luctus. Dolor purus non enim praesent elementum facilisis. Suspendisse potenti nullam ac tortor vitae purus faucibus ornare. 
+        Dui vivamus arcu felis bibendum ut tristique et egestas. Sapien eget mi proin sed libero enim sed faucibus turpis. Urna condimentum mattis pellentesque id. 
+        Odio tempor orci dapibus ultrices in iaculis nunc sed. Urna condimentum mattis pellentesque id nibh tortor id aliquet. 
+        Lobortis mattis aliquam faucibus purus in massa tempor nec.
+ </div>
       </div>
 
     </div><!-- ./container -->
